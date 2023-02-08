@@ -9,9 +9,11 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @Table(name = "product")
+@Builder
 public class Product extends BaseEntity{
 
     @Id

@@ -36,7 +36,7 @@ public class ProductDAOImpl implements ProductDAO {
             Product product = selectedProduct.get();
 
             product.setName(name);
-            product.setModifiedAt(LocalDateTime.now());
+            product.setUpdatedAt(LocalDateTime.now());
 
             updatedProduct = productRepository.save(product);
         } else {
