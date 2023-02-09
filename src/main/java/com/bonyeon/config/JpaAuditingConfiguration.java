@@ -1,4 +1,4 @@
-package com.bonyeon.jpa.data.config;
+package com.bonyeon.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

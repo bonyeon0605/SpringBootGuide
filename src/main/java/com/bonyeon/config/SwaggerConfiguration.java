@@ -1,4 +1,4 @@
-package com.bonyeon.api.config;
+package com.bonyeon.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.bonyeon.jpa.data"))
+                .apis(RequestHandlerSelectors.basePackage("com.bonyeon"))
                 .paths(PathSelectors.any())
                 .build();
     }
